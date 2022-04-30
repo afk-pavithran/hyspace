@@ -1,0 +1,32 @@
+{
+  "name": "hyspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "dev": "concurrently \"npx tsc --watch \" \"nodemon -q dist/app.js \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afk-pavithran/hyspace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afk-pavithran/hyspace/issues"
+  },
+  "homepage": "https://github.com/afk-pavithran/hyspace#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.30",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.6.4"
+  }
+}
