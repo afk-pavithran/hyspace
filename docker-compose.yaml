@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pg_databases:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=pavithran
+      - POSTGRES_PASSWORD=secretpassword
+    volumes:
+      - "./PGDATA:/var/lib/postgresql/data"
